@@ -6,6 +6,7 @@
 :root {
   --primary-color: #25AB75;
   --border-radius: 10px;
+  --dark-text-color: #7f7f7f;
 }
 
 html,body {
@@ -102,7 +103,7 @@ html,body {
 }
 
 .custom-banner p{
- color: #7f7f7f;
+ color: var(--dark-text-color);
  margin-bottom: 30px;
 }
 
@@ -110,3 +111,78 @@ html,body {
   column-gap: 15px;
 }
 
+
+
+/* Popular Section */
+
+.custom-popular {
+  padding-top: 80px;
+}
+
+.text-container {
+  margin-bottom: 30px;
+}
+
+.title {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.link-button {
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--dark-text-color);
+}
+
+.card {
+  background-color: transparent;
+  border-radius: var(--border-radius);
+  -webkit-border-radius: var(--border-radius);
+  -moz-border-radius: var(--border-radius);
+  -ms-border-radius: var(--border-radius);
+  -o-border-radius: var(--border-radius);
+
+  margin-bottom: 25px;
+}
+
+.card-body {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: -20px;
+  z-index: 2;
+}
+
+.card-img-top{
+  border-radius: var(--border-radius);
+  -webkit-border-radius: var(--border-radius);
+  -moz-border-radius: var(--border-radius);
+  -ms-border-radius: var(--border-radius);
+  -o-border-radius: var(--border-radius);
+}
+
+.card-title {
+  font-size: 38px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.card-text {
+  color: var(--dark-text-color);
+}
+
+
+.card::before {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 80%, #000000 100%);
+  content: "";
+  height: 85%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  position: absolute;
+}
+
+.custom-popular .col{
+  ;
+}
